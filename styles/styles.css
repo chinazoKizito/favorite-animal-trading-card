@@ -38,26 +38,37 @@ body{
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: 1px solid black;
     border-radius: 1rem;
     color: black;
     height: 480px;
-    width: 350px;
+    width: 340px;
     background-color: #FFC72C;
 }
-
+figcaption{
+    margin-top: -1;
+    padding: 10px;
+    width: 97%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.101);
+    text-align: center;
+   
+}
 img{
     border-radius: 5px;
-    margin: 7px;
-    padding: 3px ;
+    padding: 4px;
     width :  100%;
     border: 1px solid black;
     background-color: black;
-    align-self: center;
 }
-.caption-container{
+.details-container{
+    background-color: rgba(0, 0, 0, 0.101);
+    border-radius: 6px;
+    width:97%
+}
+.caption-container, figcaption{
     font-weight: 600;
     font-style: italic;
     color: rgb(74, 71, 71);
@@ -68,12 +79,11 @@ img{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 101%;
-    width: 101%
+    text-align: center;
+    justify-content: center;
 }
 
-span{
+p{
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 75px;
@@ -83,4 +93,25 @@ span{
 
 strong{
     color: black;
+}
+
+@media (max-width: 750px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80vw;
+    }
+    p{
+        margin-bottom: 2px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    .card{
+        width: 80vw;
+    }
+
 }
